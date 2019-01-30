@@ -249,36 +249,7 @@ namespace TropicalServer.DAL
                 throw new Exception("Error occured while retrieving Route Info - " + ex.Message.ToString());
             }
         }// End of GetPriceGroup_DAL method...
-
-        /*public DataSet GetProducts_DAL(String category)
-        {
-            DataSet ds = new DataSet();
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(connString))
-                {
-                    String select = "select a.ItemNumber, a.ItemDescription, a.PrePrice, CONCAT(a.ItemUnits, ' x ', round(a.ItemWeights * 16, 0), ' oz') as 'Size'";
-                    String tables = " from tblItem a";
-                    String where = " where a.ItemType = b.ItemTypeNumber and ItemTypeDescription = @cat";
-                    connection.Open();
-                    SqlCommand command = category == null ? new SqlCommand(select+tables, connection) : new SqlCommand(select+tables+", tblItemType b"+ where, connection);
-                    command.CommandType = CommandType.Text;
-                    if (category != null)
-                        command.Parameters.Add("@cat", SqlDbType.VarChar, 100).Value = category.Trim();
-                    command.CommandTimeout = 6000;
-                    SqlDataAdapter adp = new SqlDataAdapter(command);
-                    System.Diagnostics.Debug.WriteLine(select+"\n" + tables + ", tblItemType b" + "\n where ItemTypeDescription = @cat");
-                    adp.Fill(ds);
-                    connection.Close();
-                }
-                return ds;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Error occured while retrieving Route Info - " + ex.Message.ToString());
-            }
-        }*/
+        
 
         public DataSet GetProducts_DAL(String category)
         {
