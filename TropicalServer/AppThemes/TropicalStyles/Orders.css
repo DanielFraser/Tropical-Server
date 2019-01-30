@@ -1,0 +1,83 @@
+﻿/* Orders
+----------------------------------------------------------*/
+
+#CriteriaBar 
+{
+    background-color:#2C4E81;
+    padding:9px;
+    margin-top:5px;
+    height:20px;
+}
+#CriteriaBar .Criteria, .label
+{
+    text-align:center;
+    width:14vh;
+    margin: 2px;
+    float:left;
+}
+
+.label {
+    color: white;
+}
+
+#CriteriaBar .Criteria .label
+{
+    color:#FFFFFF;
+}
+#CriteriaBar .Criteria .Input
+{
+
+}
+#grid 
+{
+    width:100%;
+    text-align:center;
+    height: auto;
+    overflow:auto;
+    background-color: white;
+}
+
+.ordersgrid {
+    margin: 5px;
+    color: Black;
+    font-family: Calibri;
+    font-size: 12px;
+    border-color: black;
+    width: 99%;
+}
+
+.gvOrders {
+    margin: 3px auto;
+    width: 99%;
+}
+.gvOrders th
+{
+    color:#FFFFFF;
+    background-color:#3B8FA7;
+    border:2px solid #FFFFFF;
+    border-bottom:5px solid #FFFFFF;
+}
+.gvOrders td
+{
+    border:2px solid #FFFFFF;
+    padding-left:10px;
+}
+.chartItemStyle {
+    background-color: #98AFC7;
+    color: Black;
+    text-align: left;
+}
+
+.chartAlternatingItemStyle {
+    background-color: #C6DEFF;
+    color: Black;
+    text-align: left;
+}
+
+.rowLB {
+    margin-left: 15px;
+}
+
+.hiddencol {
+    display: none;
+}

@@ -1,0 +1,126 @@
+﻿
+body {
+    margin: 10px auto;
+    padding: 0;
+    width: 980px;
+    height: 90vh;
+    background-color: #CCCCCC;
+}
+
+#header {
+    margin: 0;
+    padding: 0;
+    width: 980px;
+}
+
+#container {
+    margin-top: 0;
+    padding-top: 10px;
+    width: auto;
+    height: 70vh;
+    background-color: #FFFFFF;
+}
+
+#BodyDetail {
+    height: 220px;
+    width: 400px;
+    margin: 100px auto;
+    background-color: #FF6600;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+#loginBox {
+    height: 150px;
+    margin-top: 10px;
+    width: 400px;
+    background-color: #FFCC00;
+}
+
+#login {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#forgot {
+    display: inline-block;
+    margin: auto;
+    margin-top: 12px;
+}
+
+#forgot > * {
+    vertical-align: middle;
+}
+
+
+a {
+    text-decoration: underline;
+}
+
+#forgotPassword, #forgotUsername {
+    font-family: Calibri;
+    font-size: 9pt;
+    color: #FFFFFF;
+    margin-left: 70px;
+}
+
+
+
+.credentiallbl {
+    float: left;
+    width: 25%;
+    margin-right: 0.5em;
+    text-align: right;
+    font-size: 9pt;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.logintextbox {
+    width: 250px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: right;
+    display: inline-block;
+}
+
+.rememberid {
+    color: White;
+    font-family: Calibri;
+    font-size: 9pt;
+    margin-left: 85px;
+}
+
+#credentials, #other {
+    margin: auto;
+    display: inline-block;
+}
+
+#other {
+    margin-top: 10px;
+}
+
+#credentials > * {
+    vertical-align: middle;
+}
+
+#other > * {
+    vertical-align: middle;
+}
+
+.loginbtn {
+    background-color: black;
+    margin-left: 50px;
+    color: white;
+    border-color: black;
+    border-radius: 6px;
+    width: 80px;
+    height: 24px;
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+#legendlbl {
+    font-size: 17pt;
+}
