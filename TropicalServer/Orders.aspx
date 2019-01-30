@@ -5,7 +5,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <link rel="stylesheet" href="AppThemes/TropicalStyles/Orders.css" />
-
+    <%--<link rel="Stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>--%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="CriteriaBar">
