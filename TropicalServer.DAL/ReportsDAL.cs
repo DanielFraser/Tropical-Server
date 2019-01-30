@@ -343,11 +343,10 @@ namespace TropicalServer.DAL
                     SqlCommand command = new SqlCommand("SrchOrders", connection);
                     command.CommandType = CommandType.StoredProcedure;
                     command.CommandTimeout = 6000;
-                    //System.Diagnostics.Debug.WriteLine("{0}\n{1}\nname:{2}\nmanager:{3}", date,id,name,manager);
                     command.Parameters.Add("@orderdate", SqlDbType.Int).Value = date;
                     command.Parameters.Add("@custID", SqlDbType.Int).Value = id;
                     command.Parameters.Add("@custName", SqlDbType.VarChar, 200).Value = name=="" ? null :name;
-                    command.Parameters.Add("@managerName", SqlDbType.VarChar,200).Value = manager == "" ? null : name;
+                    command.Parameters.Add("@managerName", SqlDbType.VarChar,200).Value = manager == "" ? null : manager;
                     SqlDataAdapter adp = new SqlDataAdapter(command);
                     adp.Fill(ds);
                     connection.Close();

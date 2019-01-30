@@ -39,6 +39,7 @@ namespace TropicalServer
         {
             int dateNum = (int) Cache["dateNum"], custID = (int)Cache["custID"];
             String custName = (String) Cache["custName"], manName = (String)Cache["manName"];
+            System.Diagnostics.Debug.WriteLine("{0} {1} {2} {3}",dateNum, custID, custName, manName);
             ordersgrid.DataSource = new ReportsBLL().getOrders_BLL(dateNum, custID, custName, manName);
             ordersgrid.DataBind();
         }
@@ -61,11 +62,17 @@ namespace TropicalServer
             updateGrid();
         }
 
+        protected void manNameDLChange(object sender, EventArgs e)
+        {
+            Cache["manName"] = manager.SelectedValue.ToString();
+            updateGrid();
+        }
+
         protected void DelOrder(object sender, EventArgs e)
         {
             int orderID = Int32.Parse(((LinkButton)sender).CommandArgument.ToString());
             new ReportsBLL().delOrder_BLL(orderID);
-            System.Diagnostics.Debug.WriteLine("Deleted: "+ orderID);
+            //System.Diagnostics.Debug.WriteLine("Deleted: " + orderID);
             updateGrid();
         }
 
@@ -106,15 +113,8 @@ namespace TropicalServer
                 string custAddr = ((TextBox)ordersgrid.Rows[rowInsert].Cells[5].Controls[0]).Text;
                 string temp = ((TextBox)ordersgrid.Rows[rowInsert].Cells[6].Controls[0]).Text;
                 int routeNum = temp =="" ? -1 : Int32.Parse(temp);
-
-                //....update....
+                
                 new ReportsBLL().updateOrder_BLL(orderID, trackingNum, date, custID, custName, custAddr, routeNum);
-                //SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\SampleDataBase.mdf;Integrated Security=True");
-                //string sqldel = "update ChartInfo set [Values]= '" + Values + "',[Name]= '" + Name + "' where Id=" + ItemID;
-                //conn.Open();
-                //SqlCommand comm = new SqlCommand(sqldel, conn);
-                //comm.ExecuteNonQuery();
-                //conn.Close();
 
                 ordersgrid.EditIndex = -1;
                 updateGrid();

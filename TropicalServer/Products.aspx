@@ -31,58 +31,6 @@
             <RowStyle CssClass="chartItemStyle" />
             <HeaderStyle CssClass="chartHeaderStyle" />
         </asp:GridView>
-        <%--<asp:Repeater ID="productsTbl" runat="server">
-            <HeaderTemplate>
-                <table style="width: 100%">
-                    <tr>
-                        <th class="chartHeaderStyle" scope="col" style="width: 10%">Item #
-                        </th>
-                        <th class="chartHeaderStyle" scope="col" style="width: 50%">Item Description
-                        </th>
-                        <th class="chartHeaderStyle" scope="col" style="width: 10%">Pre-Price
-                        </th>
-                        <th class="chartHeaderStyle" scope="col" style="width: 100%">Size
-                        </th>
-                    </tr>
-            </HeaderTemplate>
-            <ItemTemplate>
-                <tr class="chartItemStyle">
-                    <td>
-                        <asp:Label runat="server" Text='<%# Eval("ItemNumber") %>' />
-                    </td>
-
-                    <td>
-                        <asp:Label runat="server" Text='<%# Eval("ItemDescription") %>' />
-                    </td>
-                    <td>
-                        <asp:Label runat="server" Text='<%# Eval("PrePrice") %>' />
-                    </td>
-                    <td>
-                        <asp:Label runat="server" Text='<%# Eval("Size") %>' />
-                    </td>
-                </tr>
-            </ItemTemplate>
-            <AlternatingItemTemplate>
-                <tr class="chartAlternatingItemStyle">
-                    <td>
-                        <asp:Label runat="server" Text='<%# Eval("ItemNumber") %>' />
-                    </td>
-
-                    <td>
-                        <asp:Label runat="server" Text='<%# Eval("ItemDescription") %>' />
-                    </td>
-                    <td>
-                        <asp:Label runat="server" Text='<%# Eval("PrePrice") %>' />
-                    </td>
-                    <td>
-                        <asp:Label runat="server" Text='<%# Eval("Size") %>' />
-                    </td>
-                </tr>
-            </AlternatingItemTemplate>
-            <FooterTemplate>
-                </table>
-            </FooterTemplate>
-        </asp:Repeater>--%>
     </div>
 
 </asp:Content>
