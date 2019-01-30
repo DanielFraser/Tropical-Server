@@ -21,13 +21,13 @@
         <asp:TextBox AutoPostBack="true" ID="custid" runat="server" CssClass="Criteria" OnTextChanged="custIDChange"></asp:TextBox>
         <ajaxToolkit:AutoCompleteExtender ID="custIDAC" runat="server"
             TargetControlID="custid" ServiceMethod="GetCustIDs" CompletionSetCount="10"
-            MinimumPrefixLength="1">
+            MinimumPrefixLength="0">
         </ajaxToolkit:AutoCompleteExtender>
         <label class="label">Customer Name</label>
         <asp:TextBox AutoPostBack="true" ID="custname" runat="server" CssClass="Criteria" OnTextChanged="custNameChange"></asp:TextBox>
         <ajaxToolkit:AutoCompleteExtender ID="AutoCompleteExtender1" runat="server"
             TargetControlID="custname" ServiceMethod="GetCustNames" CompletionSetCount="10"
-            MinimumPrefixLength="1">
+            MinimumPrefixLength="0">
         </ajaxToolkit:AutoCompleteExtender>
         <label class="label">Sales Manager</label>
         <asp:DropDownList ID="manager" runat="server" CssClass="Criteria" AutoPostBack="true" OnTextChanged="manNameDLChange">
