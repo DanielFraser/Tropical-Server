@@ -31,7 +31,7 @@
         </ajaxToolkit:AutoCompleteExtender>
         <label class="label">Sales Manager</label>
         <asp:DropDownList ID="manager" runat="server" CssClass="Criteria" AutoPostBack="true" OnTextChanged="manNameDLChange">
-            <asp:ListItem Text="" Value="-1"></asp:ListItem>
+            <asp:ListItem Text="" Value=""></asp:ListItem>
         </asp:DropDownList>
     </div>
     <div id="grid">

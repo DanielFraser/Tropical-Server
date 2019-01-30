@@ -39,7 +39,7 @@ namespace TropicalServer
         {
             int dateNum = (int) Cache["dateNum"], custID = (int)Cache["custID"];
             String custName = (String) Cache["custName"], manName = (String)Cache["manName"];
-            System.Diagnostics.Debug.WriteLine("{0} {1} {2} {3}",dateNum, custID, custName, manName);
+            //System.Diagnostics.Debug.WriteLine("{0} {1} {2} {3}",dateNum, custID, custName, manName);
             ordersgrid.DataSource = new ReportsBLL().getOrders_BLL(dateNum, custID, custName, manName);
             ordersgrid.DataBind();
         }

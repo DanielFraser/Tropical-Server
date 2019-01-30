@@ -19,3 +19,9 @@ C:\Users\dukey\Google Drive\Work\Day 8 (ASP.NET)\TropicalServerApp\TropicalServe
 C:\Users\dukey\Google Drive\Work\Day 8 (ASP.NET)\TropicalServerApp\TropicalServer.DAL\obj\Debug\TropicalServer.DAL.csproj.CoreCompileInputs.cache
 C:\Users\dukey\Google Drive\Work\Day 8 (ASP.NET)\TropicalServerApp\TropicalServer.DAL\obj\Debug\TropicalServer.DAL.dll
 C:\Users\dukey\Google Drive\Work\Day 8 (ASP.NET)\TropicalServerApp\TropicalServer.DAL\obj\Debug\TropicalServer.DAL.pdb
+C:\Users\dukey\Documents\GitHub\Tropical Server\TropicalServer.DAL\bin\Debug\TropicalServer.DAL.dll
+C:\Users\dukey\Documents\GitHub\Tropical Server\TropicalServer.DAL\bin\Debug\TropicalServer.DAL.pdb
+C:\Users\dukey\Documents\GitHub\Tropical Server\TropicalServer.DAL\obj\Debug\TropicalServer.DAL.csprojAssemblyReference.cache
+C:\Users\dukey\Documents\GitHub\Tropical Server\TropicalServer.DAL\obj\Debug\TropicalServer.DAL.csproj.CoreCompileInputs.cache
+C:\Users\dukey\Documents\GitHub\Tropical Server\TropicalServer.DAL\obj\Debug\TropicalServer.DAL.dll
+C:\Users\dukey\Documents\GitHub\Tropical Server\TropicalServer.DAL\obj\Debug\TropicalServer.DAL.pdb
