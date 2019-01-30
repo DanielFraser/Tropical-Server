@@ -103,7 +103,6 @@
     <Content Include="AppThemes\TropicalStyles\Site.css" />
     <Content Include="Images\Tropical.png" />
     <Content Include="Orders.aspx" />
-    <Content Include="package.json" />
     <Content Include="UI\Products.aspx" />
     <Content Include="UserControls\UserInfoBoxControl1.ascx" />
     <Content Include="Web.config">
